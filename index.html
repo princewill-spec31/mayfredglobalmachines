@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MAYFREDGLOBAL MACHINES — production and industrial machinery in Nigeria. Pure water machines, coding machines and production equipment.">
+  <title>MAYFREDGLOBAL MACHINES | Production Equipment</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="#home" aria-label="MAYFREDGLOBAL MACHINES home">
+        <span class="brand-mark">MG</span>
+        <span>MAYFREDGLOBAL <b>MACHINES</b></span>
+      </a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+      <nav id="navLinks">
+        <a href="#home">Home</a><a href="#machines">Machines</a><a href="#prices">Price List</a><a href="#about">About</a><a href="#contact">Contact</a>
+        <a class="nav-cta" href="#enquiry">Enquire Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <div class="eyebrow">PRODUCTION EQUIPMENT • NIGERIA</div>
+        <h1>Machines that help your<br><span>business produce more.</span></h1>
+        <p>Reliable production and packaging machinery for water, manufacturing, coding, sealing and other growing businesses.</p>
+        <div class="hero-actions"><a class="btn primary" href="#machines">Explore Machines</a><a class="btn ghost" href="#enquiry">Get a Price</a></div>
+        <div class="trust-row"><span>✓ Business-focused solutions</span><span>✓ Enquiry support</span><span>✓ Mobile-friendly service</span></div>
+      </div>
+    </section>
+
+    <section class="quick-strip">
+      <div class="container quick-grid">
+        <a href="#machines"><strong>⚙</strong><span><b>Production Machines</b><small>Browse equipment</small></span></a>
+        <a href="#prices"><strong>₦</strong><span><b>Price List</b><small>Request current prices</small></span></a>
+        <a href="#enquiry"><strong>✉</strong><span><b>Make an Enquiry</b><small>Tell us what you need</small></span></a>
+        <a href="tel:09013321221"><strong>☎</strong><span><b>09013321221</b><small>Call the business</small></span></a>
+      </div>
+    </section>
+
+    <section id="machines" class="section">
+      <div class="container">
+        <div class="section-head"><div><span class="eyebrow">OUR CATEGORIES</span><h2>Production machines</h2></div><p>Equipment for entrepreneurs, factories and businesses. Product images and exact specifications can be added as you provide them.</p></div>
+        <div class="cards">
+          <article class="machine-card"><div class="machine-image water">💧</div><div class="card-body"><span class="tag">WATER PRODUCTION</span><h3>Pure Water Machines</h3><p>Equipment for water production, filling, sealing and related operations.</p><button class="link-btn" data-product="Pure Water Machine">Request price →</button></div></article>
+          <article class="machine-card"><div class="machine-image coding">▦</div><div class="card-body"><span class="tag">PACKAGING</span><h3>Coding Machines</h3><p>Machines for printing dates, batch information and production codes on products.</p><button class="link-btn" data-product="Coding Machine">Request price →</button></div></article>
+          <article class="machine-card"><div class="machine-image sealing">▰</div><div class="card-body"><span class="tag">PACKAGING</span><h3>Sealing & Packaging</h3><p>Packaging equipment for sealing, wrapping and preparing products for sale.</p><button class="link-btn" data-product="Sealing & Packaging Machine">Request price →</button></div></article>
+          <article class="machine-card"><div class="machine-image production">⚙</div><div class="card-body"><span class="tag">PRODUCTION</span><h3>Production Equipment</h3><p>Explore machinery and accessories for different production businesses.</p><button class="link-btn" data-product="Production Equipment">Request price →</button></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="prices" class="section muted">
+      <div class="container price-box">
+        <div><span class="eyebrow">PRICE LIST</span><h2>Need current prices?</h2><p>Machine prices can vary by model, capacity, specification and availability. Request the current price for the exact machine you want.</p></div>
+        <a class="btn primary" href="#enquiry" data-product="Price List">Request Price List</a>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container about-grid">
+        <div><span class="eyebrow">ABOUT MAYFREDGLOBAL</span><h2>Built around your production needs.</h2><p>MAYFREDGLOBAL MACHINES provides machinery and production equipment for businesses looking to start, expand or improve their operations.</p><p>Use the enquiry form to tell us your product, desired capacity and budget range. The team can then guide you toward the appropriate machine.</p></div>
+        <div class="feature-list"><div><b>01</b><span><strong>Ask for the right machine</strong><small>Tell us what you want to produce and we'll help you navigate the options.</small></span></div><div><b>02</b><span><strong>Request a current price</strong><small>Prices are handled through direct enquiry so you can get up-to-date information.</small></span></div><div><b>03</b><span><strong>Get in touch</strong><small>Call 09013321221 or send an enquiry from the website.</small></span></div></div>
+      </div>
+    </section>
+
+    <section id="enquiry" class="section enquiry-section">
+      <div class="container enquiry-grid">
+        <div><span class="eyebrow">ENQUIRY DESK</span><h2>Tell us what you need.</h2><p>Request a price, ask about specifications or describe the production setup you're planning.</p><div class="contact-mini"><a href="tel:09013321221">☎ <span>09013321221</span></a><a href="mailto:fredafam@gmail.com">✉ <span>fredafam@gmail.com</span></a></div></div>
+        <form id="enquiryForm" class="form">
+          <label>Full name<input name="name" required placeholder="Your name"></label>
+          <label>Phone number<input name="phone" required placeholder="080..."></label>
+          <label>Machine / product<select name="machine" id="machineSelect"><option>Pure Water Machine</option><option>Coding Machine</option><option>Sealing & Packaging Machine</option><option>Production Equipment</option><option>Price List</option><option>Other</option></select></label>
+          <label>Message<textarea name="message" rows="4" placeholder="Tell us your quantity, capacity or any specifications you need."></textarea></label>
+          <button class="btn primary" type="submit">Send Enquiry</button>
+          <small class="form-note">Your enquiry will open your email app addressed to MAYFREDGLOBAL MACHINES.</small>
+        </form>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="container contact-inner">
+        <div><span class="eyebrow">CONTACT</span><h2>Let's discuss your machine.</h2><p>Call, email or follow MAYFREDGLOBAL MACHINES online.</p></div>
+        <div class="socials"><a href="tel:09013321221">Call<br><b>09013321221</b></a><a href="mailto:fredafam@gmail.com">Email<br><b>fredafam@gmail.com</b></a><a href="https://facebook.com/mayfredglobalmachines" target="_blank" rel="noopener">Facebook<br><b>mayfredglobalmachines</b></a><a href="https://instagram.com/mayfredmachines" target="_blank" rel="noopener">Instagram<br><b>@mayfredmachines</b></a></div>
+      </div>
+    </section>
+  </main>
+
+  <button class="assistant-toggle" id="assistantToggle" aria-label="Open assistant">✦</button>
+  <aside class="assistant" id="assistant" aria-label="MAYFRED assistant">
+    <div class="assistant-head"><div><b>MAYFRED Assistant</b><small>Machine navigation help</small></div><button id="assistantClose">×</button></div>
+    <div class="chat" id="chat"><div class="bot">Hi! I can help you find a machine, request a price, or contact MAYFREDGLOBAL MACHINES.</div></div>
+    <div class="suggestions"><button data-q="What machines do you sell?">Machines</button><button data-q="How do I request a price?">Prices</button><button data-q="How can I contact you?">Contact</button></div>
+    <form id="chatForm"><input id="chatInput" placeholder="Ask about a machine..." autocomplete="off"><button>➤</button></form>
+  </aside>
+
+  <footer><div class="container footer-inner"><div><b>MAYFREDGLOBAL MACHINES</b><small>Production & industrial machinery</small></div><span>© <span id="year"></span> MAYFREDGLOBAL MACHINES</span></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
