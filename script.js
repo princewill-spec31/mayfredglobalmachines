@@ -1,6 +1,6 @@
 const $=s=>document.querySelector(s),$$=s=>document.querySelectorAll(s);
 $('#year').textContent=new Date().getFullYear();
-$('#menuBtn').addEventListener('click',()=>$('.nav').classList.toggle('open'));
+$('#menuBtn').addEventListener('click',()=>{const n=$('.nav'),b=$('#menuBtn');const open=n.classList.toggle('open');b.setAttribute('aria-expanded',String(open));b.setAttribute('aria-label',open?'Close menu':'Open menu');});
 $$('#navLinks a').forEach(a=>a.addEventListener('click',()=>$('.nav').classList.remove('open')));
 
 function whatsappUrl(message){
@@ -71,3 +71,12 @@ $('#chatForm').addEventListener('submit',e=>{
   if(i.value.trim()){send(i.value.trim());i.value=''}
 });
 $$('.suggestions button').forEach(b=>b.onclick=()=>send(b.dataset.q));
+
+// UX enhancements
+const backTop=$('#backTop');
+window.addEventListener('scroll',()=>backTop.classList.toggle('show',window.scrollY>500),{passive:true});
+backTop.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+const revealItems=document.querySelectorAll('.reveal');
+if('IntersectionObserver' in window){const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target)}}),{threshold:.08});revealItems.forEach(el=>observer.observe(el));}else revealItems.forEach(el=>el.classList.add('visible'));
+// Close the mobile menu when Escape is pressed.
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&$('.nav').classList.contains('open')){$('.nav').classList.remove('open');$('#menuBtn').setAttribute('aria-expanded','false');$('#menuBtn').setAttribute('aria-label','Open menu')}});
