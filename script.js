@@ -56,7 +56,8 @@ function answer(q){
   if(x.includes('price')||x.includes('cost'))return 'For current prices, use “Request on WhatsApp” or choose a machine and send an enquiry. Prices can vary by model, capacity and specification.';
   if(x.includes('contact')||x.includes('phone')||x.includes('call'))return 'You can call 09013321221, chat on WhatsApp, or email fredafam@gmail.com. Facebook: mayfredglobalmachines. Instagram: @mayfredmachines.';
   if(x.includes('water'))return 'For pure water production equipment, choose Pure Water Machine in the enquiry form and tell us your desired capacity or requirements.';
-  if(x.includes('coding'))return 'Coding machines are used for dates, batch information and production codes. Select Coding Machine in the enquiry form for a current price.';
+  if(x.includes('shrink')||x.includes('sleeve')||x.includes('wrapping'))return 'The Shrink/Sleeve Wrapping Machine is listed at NGN 7,500,000.00. It is designed for heat-shrink packaging, neat sealing and efficient production. Use the enquiry button to ask about specifications and availability.';
+  if(x.includes('coding'))return 'The DY-8 Date Coding Machine is listed at NGN 90,000.00 and is used for production dates and batch information.';
   return 'I can help you navigate the machine categories, request a price, or contact MAYFREDGLOBAL MACHINES. Try asking “What machines do you sell?” or “How can I contact you?”';
 }
 function send(q){
