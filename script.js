@@ -163,13 +163,13 @@ function answer(question) {
     return 'Use the machine enquiry buttons or WhatsApp to ask about a machine. Listed prices are shown on the product cards.';
   }
   if (x.includes('coding')) {
-    return 'The DY-8 Date Coding Machine is listed at NGN 90,000.00 and is used for production dates and batch information.';
+    return 'The DY-8 Date Coding Machine is listed at  and is used for production dates and batch information.';
   }
   if (x.includes('shrink') || x.includes('sleeve') || x.includes('wrapping')) {
-    return 'Shrink/Sleeve Wrapping Machines are listed at NGN 7,500,000.00. They are designed for efficient heat-shrink packaging and sealing.';
+    return 'Shrink/Sleeve Wrapping Machines are listed at  They are designed for efficient heat-shrink packaging and sealing.';
   }
   if (x.includes('dingli') || x.includes('sachet')) {
-    return 'The DINGLI Sachet Water Machine is listed at NGN 2,500,000.00 and is designed for automatic sachet water filling and sealing.';
+    return 'The DINGLI Sachet Water Machine is listed at  and is designed for automatic sachet water filling and sealing.';
   }
   if (x.includes('machine')) {
     return 'We showcase water production, coding, sealing and packaging, recycling, blowing and other production equipment. Browse the Machines section for available products.';
