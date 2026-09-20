@@ -108,3 +108,19 @@ img{max-width:100%;height:auto}
   /* If animation JS is delayed or blocked, the catalogue remains visible on phones. */
   .reveal,.reveal.visible{opacity:1!important;transform:none!important}
 }
+
+
+/* User-supplied factory production-line background */
+:root{--factory-bg:url("assets/factory-background.webp")}
+body{background-color:#071522;background-image:linear-gradient(rgba(3,12,20,.76),rgba(3,12,20,.76)),var(--factory-bg);background-size:cover;background-position:center;background-attachment:fixed;background-repeat:no-repeat}
+main{position:relative}
+main:before{content:"";position:fixed;inset:0;z-index:-1;background:rgba(3,12,20,.08);pointer-events:none}
+.hero{background:linear-gradient(90deg,rgba(4,15,24,.88),rgba(4,15,24,.54)),var(--factory-bg);background-size:cover;background-position:center;}
+.quick-strip{background:rgba(255,255,255,.94);backdrop-filter:blur(10px)}
+.section{background:rgba(248,250,251,.90)}
+.section.muted{background:rgba(246,244,239,.92)}
+.enquiry-section{background:rgba(242,245,246,.92)}
+.about-grid,.enquiry-grid{position:relative}
+.contact-section{background:rgba(6,17,28,.94)}
+.machine-card,.form,.feature-list>div{background:rgba(255,255,255,.95)}
+@media(max-width:560px){body{background-attachment:scroll}.hero{background-position:center center}}
